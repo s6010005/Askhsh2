@@ -136,9 +136,10 @@ namespace Askhsh2
             this.Controls.Add(this.label1);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form1";
+            this.Text = "Κείμενο αίτησης";
             this.ResumeLayout(false);
             this.PerformLayout();
+            this.Icon = Properties.Resources.appForm;
 
         }
 

@@ -29,6 +29,7 @@ namespace Askhsh2
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form2));
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -281,7 +282,7 @@ namespace Askhsh2
             this.comboBox3.Enabled = false;
             this.comboBox3.FormattingEnabled = true;
             this.comboBox3.Items.AddRange(new object[] {
-            "υποχρεωτική εκπαίδευση",
+            "Yποχρεωτική εκπαίδευση",
             "ΙΕΚ",
             "ΤΕΙ",
             "ΑΕΙ",
@@ -348,9 +349,10 @@ namespace Askhsh2
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.Icon = Properties.Resources.appForm;
             this.Name = "Form2";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form2";
+            this.Text = "Αίτηση";
             this.ResumeLayout(false);
             this.PerformLayout();
 
