@@ -69,10 +69,11 @@ namespace Askhsh2
                         label13.Text = "Λάθος ΑΜΚΑ";
                     }                      
                     else
-                    {                      
+                    {
                         if (checkLuhn(amka))
                         {
-                            label13.Text = "";
+                            //label13.Text = "";
+                            label13.Visible = false;
                             textBox1.ReadOnly = true;
                             textBox2.Enabled = true;
                             textBox3.Enabled = true;
@@ -88,7 +89,8 @@ namespace Askhsh2
                             button1.Enabled = true;
                         }
                         else
-                            label13.Text = "Λάθος ΑΜΚΑ";
+                            label13.Visible = true;
+                            //label13.Text = "Λάθος ΑΜΚΑ";
                     }
                 }
             }
@@ -149,6 +151,12 @@ namespace Askhsh2
 
             //Form targetform = new Form1();
             //targetform.Show();
+        }
+
+        private void btnClear_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            new Form2().Show();
         }
     }
 }
